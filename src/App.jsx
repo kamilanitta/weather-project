@@ -1,21 +1,18 @@
-import { Weather } from "./Weather/Weather"
+import { useState } from "react"
+import { Footer } from "./components/Footer"
+import { SearchInput } from "./components/SearchInput"
+import { Weather } from "./components/Weather"
+
 import "./App.css"
 
 function App() {
+  const [city, setCity] = useState("Berlin")
+
   return (
-    <div className="app">
-      <div className="container">
-        <Weather />
-        <footer>
-          This project was coded by{" "}
-          <a
-            href="https://github.com/kamilanitta/weather-project"
-            target="_blank"
-          >
-            Kamila Nitta
-          </a>
-        </footer>
-      </div>
+    <div className="app-container">
+      <SearchInput setCity={setCity} />
+      <Weather city={city} />
+      <Footer />
     </div>
   )
 }
