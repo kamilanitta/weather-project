@@ -1,0 +1,21 @@
+/* SearchInput  */
+.search-input {
+  background-color: #f9f7fe;
+  border: none;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  padding: 20px;
+  width: 75%;
+  border-radius: 6px;
+}
+
+.search-button {
+  margin-left: 5px;
+  font-size: 16px;
+  background-color: #2d336b;
+  color: white;
+  border: none;
+  padding: 20px;
+  line-height: 1;
+  border-radius: 5px;
+}

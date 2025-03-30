@@ -1,15 +1,15 @@
-import "../App.css"
+import "./Footer.css"
 
 export const Footer = () => {
   return (
     <div className="footer">
       <p>
-        This project was coded by{" "}
+        Coded by{" "}
         <a
           href="#"
           target="_blank"
         >
-          Kamila{" "}
+          Kamila Nitta{" "}
         </a>
         and is{" "}
         <a
@@ -18,12 +18,12 @@ export const Footer = () => {
         >
           on GitHub{" "}
         </a>
-        and{" "}
+        and hosted on{" "}
         <a
           href="https://my-weather-she-codes.netlify.app/"
           target="_blank"
         >
-          hosted on Netlify.
+          Netlify.
         </a>
       </p>
     </div>
