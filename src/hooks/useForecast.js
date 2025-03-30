@@ -13,7 +13,6 @@ export const useForecast = () => {
     try {
       const response = await axios.get(apiURL)
       setForecastData(response.data)
-      console.log("forecast=====>", response)
     } catch (error) {
       throw new Error(`Search error ${error}`)
     } finally {
