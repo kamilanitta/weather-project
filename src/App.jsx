@@ -22,7 +22,12 @@ function App() {
   return (
     <div className="app-container">
       <h1 className="app-title">Weather App</h1>
-      <SearchInput onSearch={fetchWeather} />
+      <SearchInput
+        onSearch={(city) => {
+          fetchWeather(city)
+          fetchForecast(city)
+        }}
+      />
       <hr />
       {weatherData && <CurrentWeather data={weatherData} />}
       <hr />

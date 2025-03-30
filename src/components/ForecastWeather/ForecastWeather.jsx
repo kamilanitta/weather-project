@@ -4,7 +4,7 @@ export const ForecastWeather = ({ data }) => {
   const days = data.daily.slice(1, 6) // pega só os próximos 5 dias (ignora o de hoje)
 
   const formatDay = (dateString) => {
-    const date = new Date(dateString * 1000)
+    const date = new Date(dateString + "T12:00:00")
     const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
     return days[date.getDay()]
